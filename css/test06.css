@@ -1,0 +1,158 @@
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
+
+/* #2c99cd, #2e3d76 */
+
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mc {
+    color: #2e3d76;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.header {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 100px;
+}
+
+.header .container {
+    justify-content: space-between;
+}
+
+.header h1 {
+    font-size: 0;
+}
+
+.header h1 img {
+    transform: scale(0.8);
+}
+
+.gnb ul {
+    display: flex;
+}
+
+.gnb ul li {
+    padding: 0 15px;
+}
+
+.log ul {
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    gap: 20px;
+}
+
+.mainVisual {
+    padding: 0;
+}
+
+.mainVisual .bg01 {
+    background: url(../img/bg03.jpg) no-repeat center center/cover;
+    height: calc(100vh - 100px);
+}
+
+.mainVisual .bg02 {
+    background: url(../img/bg01.jpg) no-repeat center center/cover;
+    height: calc(100vh - 100px);
+}
+
+.mainVisual .bg03 {
+    background: url(../img/bg05.jpg) no-repeat center center/cover;
+    height: calc(100vh - 100px);
+}
+
+.mainCopy {
+}
+
+.mainCopy .left {
+    flex: 1;
+}
+
+.mainCopy .bg {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.mainCopy .shaak {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    animation: shaak 2s infinite;
+}
+
+@keyframes shaak {
+    0% {
+        top: 50%;
+    }
+    50% {
+        top: 55%;
+    }
+    100% {
+        top: 50%;
+    }
+}
+
+.mainCopy .waveBack {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    background: #304d82;
+    width: 800px;
+    height: 800px;
+    border-radius: 45%;
+    animation: wave 6s infinite;
+}
+
+.mainCopy .waveFront {
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    width: 800px;
+    height: 800px;
+    border-radius: 45%;
+    animation: wave 5s infinite;
+    z-index: 999;
+}
+
+@keyframes wave {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.mainCopy .right {
+    flex: 1;
+    align-items: center;
+}
+
+.mainCopy .right p {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.mainInterior {
+}
+
+.mainFran {
+}
