@@ -2,6 +2,7 @@
 
 * {
     font-family: "Spoqa Han Sans Neo", "sans-serif";
+    /* border: 1px solid #f00; */
 }
 
 /* #2c99cd, #2e3d76 */
@@ -16,6 +17,12 @@ h2 {
     font-size: 30px;
     font-weight: 700;
     color: #333;
+    margin: 0 0 30px 0;
+}
+
+p {
+    color: #333;
+    letter-spacing: -0.025em;
 }
 
 .mc {
@@ -27,9 +34,6 @@ section {
 }
 
 .header {
-    font-size: 19px;
-    font-weight: 500;
-    line-height: 100px;
 }
 
 .header .container {
@@ -39,14 +43,18 @@ section {
 .header h1 {
     font-size: 0;
     align-items: center;
+    padding: 10px 0;
 }
 
 .header h1 img {
-    transform: scale(0.8);
+    height: 100px;
 }
 
 .gnb ul {
+    font-size: 19px;
+    font-weight: 500;
     display: flex;
+    line-height: 120px;
 }
 
 .gnb ul li {
@@ -58,6 +66,7 @@ section {
     font-weight: 500;
     display: flex;
     gap: 20px;
+    line-height: 120px;
 }
 
 .mainVisual {
@@ -65,18 +74,18 @@ section {
 }
 
 .mainVisual .bg01 {
-    background: url(../img/bg03.jpg) no-repeat center center/cover;
-    height: calc(100vh - 100px);
+    background: url(../img/bg08.jpg) no-repeat top 70% center / cover;
+    height: calc(100vh - 120px);
 }
 
 .mainVisual .bg02 {
-    background: url(../img/bg01.jpg) no-repeat center center/cover;
-    height: calc(100vh - 100px);
+    background: url(../img/bg10.jpg) no-repeat top 65% center/cover;
+    height: calc(100vh - 120px);
 }
 
 .mainVisual .bg03 {
     background: url(../img/bg05.jpg) no-repeat center center/cover;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 120px);
 }
 
 .mainCopy {
@@ -99,19 +108,20 @@ section {
     position: absolute;
     top: 50%;
     left: 55%;
-    transform: translate(-50%, -50%);
-    animation: shaak 2s infinite;
+    animation: shaak 5s infinite;
+    height: 300px;
 }
 
 @keyframes shaak {
     0% {
-        top: 50%;
-    }
-    50% {
-        top: 55%;
+        top: 62%;
+        transform-origin: bottom center;
+        transform: translate(-50%, -50%) rotate(90deg);
     }
     100% {
-        top: 50%;
+        top: 65%;
+        transform-origin: bottom center;
+        transform: translate(-50%, -50%) rotate(-90deg);
     }
 }
 
@@ -152,13 +162,75 @@ section {
     align-items: center;
 }
 
-.mainCopy .right p {
+.mainCopy .right span {
     font-size: 35px;
+    font-weight: 700;
+}
+
+.mainCopy .right p {
+    font-size: 17px;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.3;
+}
+
+.mainMenu {
+}
+
+.mainMenu .container {
+    display: block;
+    height: 600px;
+}
+
+/* .fleBox {
+    display: flex;
+} */
+
+.tabMenu > li > a {
+    display: inline-block;
+    line-height: 40px;
+}
+
+.tabMenu > li.on > a {
+    background: #2e3d76;
+}
+
+.tabContent {
+    position: relative;
+}
+
+.tabContent > li {
+    position: absolute;
+    inset: 0 auto auto 0;
+    visibility: hidden;
+    width: 100%;
+}
+
+.tabContent > li.on {
+    visibility: visible;
+    display: block;
 }
 
 .mainInterior {
+}
+
+.mainInterior .inSlide .inte01 {
+    background: url(../img/bg07.jpg) no-repeat center center/cover;
+    height: 400px;
+}
+
+.mainInterior .inSlide .inte02 {
+    background: url(../img/bg04.jpg) no-repeat center center/cover;
+    height: 400px;
+}
+
+.mainInterior .inSlide .inte03 {
+    background: url(../img/bg06.jpg) no-repeat center center/cover;
+    height: 400px;
+}
+
+.mainInterior .inSlide .inte04 {
+    background: url(../img/bg09.jpg) no-repeat center center/cover;
+    height: 400px;
 }
 
 .mainFran {
