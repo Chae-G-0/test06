@@ -14,7 +14,7 @@
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
     color: #333;
     margin: 0 0 30px 0;
@@ -54,11 +54,8 @@ section {
     font-size: 19px;
     font-weight: 500;
     display: flex;
+    gap: 30px;
     line-height: 120px;
-}
-
-.gnb ul li {
-    padding: 0 15px;
 }
 
 .log ul {
@@ -158,6 +155,7 @@ section {
 }
 
 .mainCopy .right {
+    display: flex;
     flex: 1;
     align-items: center;
 }
@@ -165,6 +163,7 @@ section {
 .mainCopy .right span {
     font-size: 35px;
     font-weight: 700;
+    line-height: 1.6;
 }
 
 .mainCopy .right p {
@@ -178,20 +177,36 @@ section {
 
 .mainMenu .container {
     display: block;
-    height: 600px;
+    height: 400px;
 }
 
-/* .fleBox {
+.fleBox {
     display: flex;
-} */
+}
+
+.tabMenu {
+    flex: 1;
+    border: 1px solid #2e3d76;
+    border-radius: 10px;
+    padding: 30px;
+}
 
 .tabMenu > li > a {
-    display: inline-block;
+    text-align: center;
+    display: block;
     line-height: 40px;
+    padding: 0 15px;
+    border-radius: 5px;
 }
 
 .tabMenu > li.on > a {
     background: #2e3d76;
+    color: #fff;
+}
+
+.tabCoffee {
+    flex: 5;
+    padding: 0 0 0 15px;
 }
 
 .tabContent {
@@ -210,28 +225,122 @@ section {
     display: block;
 }
 
+.menuSlide figure {
+    padding: 0 15px;
+}
+
+.menuSlide figure img {
+    border-radius: 10px;
+    margin: 0 0 10px 0;
+}
+
+.menuSlide .txt {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+    color: #333;
+}
+
+.mainTxt {
+    overflow: hidden;
+}
+
+.mainTxt::after {
+    content: "Blu Shaak Blu Shaak Blu Shaak Blu Shaak Blu Shaak ";
+    font-size: 100px;
+    font-weight: 900;
+    color: #e7f5ff;
+    animation: move 10s infinite;
+}
+
+@keyframes move {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
 .mainInterior {
+}
+
+.mainInterior .container {
+    display: block;
+    width: calc((100% - 1200px) / 2 + 1200px);
+    margin: 0 0 0 auto;
 }
 
 .mainInterior .inSlide .inte01 {
     background: url(../img/bg07.jpg) no-repeat center center/cover;
-    height: 400px;
 }
 
 .mainInterior .inSlide .inte02 {
     background: url(../img/bg04.jpg) no-repeat center center/cover;
-    height: 400px;
 }
 
 .mainInterior .inSlide .inte03 {
     background: url(../img/bg06.jpg) no-repeat center center/cover;
-    height: 400px;
 }
 
 .mainInterior .inSlide .inte04 {
     background: url(../img/bg09.jpg) no-repeat center center/cover;
+}
+
+.inSlide figure {
+    border-radius: 15px;
     height: 400px;
+    margin: 0 15px;
+}
+
+.mainInterior .inBox {
+    display: flex;
+}
+
+.mainInterior .left {
+    width: 25%;
+}
+
+.mainInterior .left p:nth-child(1) {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+}
+
+.mainInterior .right {
+    width: 75%;
+    overflow: hidden;
+    padding: 0 0 0 30px;
+}
+
+.mainInterior .inSlide {
+    width: 120%;
 }
 
 .mainFran {
+}
+
+.mainFran .container {
+    display: block;
+}
+
+.mainFran form {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainFran label {
+    margin: 0 0 10px 0;
+}
+
+input {
+    width: 300px;
+    padding: 0 10px;
+    margin: 0 0 20px 0;
+    outline: none;
+}
+
+button {
+    width: 300px;
 }

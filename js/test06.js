@@ -8,12 +8,10 @@ $(function () {
     });
 
     $(".menuSlide").slick({
-        autoplay: false,
+        autoplay: true,
         arrows: false,
         dots: false,
-        centerMode: true,
-        centerPadding: "450px",
-        sliedToShow: 3,
+        slidesToShow: 3,
         pauseOnFocus: false,
         pauseOnHover: false,
         swipeToSlide: true,
@@ -22,9 +20,8 @@ $(function () {
     $(".inSlide").slick({
         arrows: false,
         dots: false,
-        centerMode: true,
-        centerPadding: "600px",
-        sliedToShow: 3,
+        slidesToShow: 2,
+        swipeToSlide: true,
     });
 
     $(".tabMenu>li>a").on("click", function (e) {
