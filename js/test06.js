@@ -8,7 +8,7 @@ $(function () {
     });
 
     $(".menuSlide").slick({
-        autoplay: true,
+        // autoplay: true,
         arrows: false,
         dots: false,
         slidesToShow: 3,

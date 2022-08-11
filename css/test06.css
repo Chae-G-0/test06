@@ -155,29 +155,45 @@ section {
 }
 
 .mainCopy .right {
-    display: flex;
     flex: 1;
-    align-items: center;
+    margin: auto 0;
 }
 
 .mainCopy .right span {
-    font-size: 35px;
+    font-size: 43px;
     font-weight: 700;
     line-height: 1.6;
 }
 
 .mainCopy .right p {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 1.3;
+    margin: 0 0 10px 0;
+}
+
+.mainCopy .right p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.mainCopy .right p:nth-child(3) {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .mainMenu {
 }
 
 .mainMenu .container {
+    /* width: 1260px; */
     display: block;
     height: 400px;
+}
+
+.menuTop {
+    display: flex;
+    justify-content: space-between;
 }
 
 .fleBox {
@@ -186,15 +202,15 @@ section {
 
 .tabMenu {
     flex: 1;
-    border: 1px solid #2e3d76;
+    border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .tabMenu > li > a {
     text-align: center;
     display: block;
-    line-height: 40px;
+    line-height: 50px;
     padding: 0 15px;
     border-radius: 5px;
 }
@@ -206,7 +222,6 @@ section {
 
 .tabCoffee {
     flex: 5;
-    padding: 0 0 0 15px;
 }
 
 .tabContent {
@@ -225,44 +240,96 @@ section {
     display: block;
 }
 
-.menuSlide figure {
-    padding: 0 15px;
+.menuSlide {
 }
 
 .menuSlide figure img {
     border-radius: 10px;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px 35px;
 }
 
 .menuSlide .txt {
     text-align: center;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 500;
     color: #333;
+    text-indent: 30px;
+}
+
+.arrow {
+    font-size: 17px;
+    color: #2e3d76;
+    margin: 0 3px 0 0;
+    transform: translateY(15px);
+}
+
+.arrow i {
+    border: 1px solid #2e3d76;
+    border-radius: 50%;
+    padding: 7px;
+    margin: 0 3px;
 }
 
 .mainTxt {
+    position: relative;
     overflow: hidden;
 }
 
-.mainTxt::after {
-    content: "Blu Shaak Blu Shaak Blu Shaak Blu Shaak Blu Shaak ";
+.mainTxt::before {
+    content: "Blu Shaak Blu Shaak Blu Shaak Blu Shaak";
+    position: absolute;
+    top: 0;
+    left: 0;
     font-size: 100px;
     font-weight: 900;
-    color: #e7f5ff;
-    animation: move 10s infinite;
+    color: #f9f9f9;
+    white-space: nowrap;
+    animation: move 20s infinite linear;
+}
+
+.mainTxt::after {
+    content: "Blu Shaak Blu Shaak Blu Shaak Blu Shaak";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 100px;
+    font-weight: 900;
+    color: #f9f9f9;
+    white-space: nowrap;
+    animation: move2 20s infinite linear;
 }
 
 @keyframes move {
     from {
-        transform: translate3d(0, 0, 0);
+        transform: translateX(0);
     }
     to {
-        transform: translate3d(-100%, 0, 0);
+        transform: translateX(-100%);
+    }
+}
+@keyframes move2 {
+    from {
+        transform: translateX(100%) translate3d(0, 0, 0);
+    }
+    to {
+        transform: translateX(100%) translate3d(100, 0, 0);
     }
 }
 
 .mainInterior {
+}
+
+.mainInterior h2 {
+    font-size: 45px;
+    line-height: 1;
+}
+
+.mainInterior h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #2e3d76;
 }
 
 .mainInterior .container {
@@ -298,14 +365,16 @@ section {
 }
 
 .mainInterior .left {
+    margin: auto 0;
     width: 25%;
+    line-height: 1.3;
 }
 
-.mainInterior .left p:nth-child(1) {
+.mainInterior .left p:nth-child(2) {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.2;
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
 }
 
 .mainInterior .right {
