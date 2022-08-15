@@ -71,7 +71,7 @@ section {
 }
 
 .mainVisual .bg01 {
-    background: url(../img/bg08.jpg) no-repeat top 70% center / cover;
+    background: url(../img/bg08.jpg) no-repeat bottom 10% center / cover;
     height: calc(100vh - 120px);
 }
 
@@ -160,7 +160,7 @@ section {
 }
 
 .mainCopy .right span {
-    font-size: 43px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 1.6;
 }
@@ -188,7 +188,7 @@ section {
 .mainMenu .container {
     /* width: 1260px; */
     display: block;
-    height: 400px;
+    height: 350px;
 }
 
 .menuTop {
@@ -257,7 +257,7 @@ section {
 }
 
 .arrow {
-    font-size: 17px;
+    font-size: 13px;
     color: #2e3d76;
     margin: 0 3px 0 0;
     transform: translateY(15px);
@@ -266,7 +266,7 @@ section {
 .arrow i {
     border: 1px solid #2e3d76;
     border-radius: 50%;
-    padding: 7px;
+    padding: 5px;
     margin: 0 3px;
 }
 
@@ -285,6 +285,7 @@ section {
     color: #f9f9f9;
     white-space: nowrap;
     animation: move 20s infinite linear;
+    padding: 50px 0 0 0;
 }
 
 .mainTxt::after {
@@ -297,6 +298,8 @@ section {
     color: #f9f9f9;
     white-space: nowrap;
     animation: move2 20s infinite linear;
+    padding: 50px 0 0 0;
+
 }
 
 @keyframes move {
@@ -320,16 +323,16 @@ section {
 }
 
 .mainInterior h2 {
-    font-size: 45px;
     line-height: 1;
 }
 
 .mainInterior h2::after {
     content: "";
     display: block;
-    width: 60px;
+    width: 70px;
     height: 2px;
     background: #2e3d76;
+    margin-top: 30px;
 }
 
 .mainInterior .container {
@@ -387,16 +390,45 @@ section {
     width: 120%;
 }
 
-.mainFran {
+.mainFran * {
+    /* border: 1px solid #f00; */
 }
 
 .mainFran .container {
     display: block;
+    
+}
+
+.mainFran p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+}
+
+.mainFran .fbox {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.mainFran .fbox .left {
+    flex: 1;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.fbox .left span {
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .mainFran form {
     display: flex;
+    flex: 1;
     flex-direction: column;
+    font-size: 17px;
 }
 
 .mainFran label {
@@ -405,11 +437,40 @@ section {
 
 input {
     width: 300px;
-    padding: 0 10px;
+    padding: 3px 10px;
     margin: 0 0 20px 0;
     outline: none;
+    border: 1px solid #2e3d76;
 }
 
 button {
     width: 300px;
+}
+
+.footer {
+    padding: 50px 0;
+    background: #2e3d76;
+    color: #fff;
+}
+
+.footer .container {
+    justify-content: space-between;
+}
+
+.List {
+    display: flex;
+    gap: 50px;
+}
+
+
+.footer h3 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.footer dd {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.4;
 }
