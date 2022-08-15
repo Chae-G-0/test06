@@ -17,6 +17,14 @@ $(function () {
         swipeToSlide: true,
     });
 
+    $('.arrow i:nth-child(1)').on('click', function(){
+        $('.menuSlide').slick('slickPrev')
+    });
+
+    $('.arrow i:nth-child(2)').on('click', function(){
+        $('.menuSlide').slick('slickNext')
+    });
+
     $(".inSlide").slick({
         arrows: false,
         dots: false,
