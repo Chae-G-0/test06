@@ -32,6 +32,14 @@ $(function () {
         swipeToSlide: true,
     });
 
+    $('.inArrow i:nth-child(1)').on('click', function(){
+        $('.inSlide').slick('slickPrev')
+    });
+
+    $('.inArrow i:nth-child(2)').on('click', function(){
+        $('.inSlide').slick('slickNext')
+    });
+
     $(".tabMenu>li>a").on("click", function (e) {
         e.preventDefault();
         var idx = $(this).parent().index();
