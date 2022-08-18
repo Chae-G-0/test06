@@ -15,14 +15,26 @@ $(function () {
         pauseOnFocus: false,
         pauseOnHover: false,
         swipeToSlide: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    autoplay: true,
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: "90px",
+                    slidesToShow: 1,
+                },
+            },
+        ],
     });
 
-    $('.arrow i:nth-child(1)').on('click', function(){
-        $('.menuSlide').slick('slickPrev')
+    $(".arrow i:nth-child(1)").on("click", function () {
+        $(".menuSlide").slick("slickPrev");
     });
 
-    $('.arrow i:nth-child(2)').on('click', function(){
-        $('.menuSlide').slick('slickNext')
+    $(".arrow i:nth-child(2)").on("click", function () {
+        $(".menuSlide").slick("slickNext");
     });
 
     $(".inSlide").slick({
@@ -30,14 +42,24 @@ $(function () {
         dots: false,
         slidesToShow: 2,
         swipeToSlide: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    autoplay: true,
+                    arrows: false,
+                    slidesToShow: 1,
+                },
+            },
+        ],
     });
 
-    $('.inArrow i:nth-child(1)').on('click', function(){
-        $('.inSlide').slick('slickPrev')
+    $(".inArrow i:nth-child(1)").on("click", function () {
+        $(".inSlide").slick("slickPrev");
     });
 
-    $('.inArrow i:nth-child(2)').on('click', function(){
-        $('.inSlide').slick('slickNext')
+    $(".inArrow i:nth-child(2)").on("click", function () {
+        $(".inSlide").slick("slickNext");
     });
 
     $(".tabMenu>li>a").on("click", function (e) {
