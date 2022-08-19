@@ -695,7 +695,7 @@ section {
     }
 
     .mainVisual {
-        padding: 0;
+        padding: 0 0 50px 0;
     }
 
     .mainVisual .bg01 {
@@ -1159,7 +1159,7 @@ section {
 
     .mainFran table td {
         width: 33.333%;
-        padding: 20px 10px;
+        padding: 20px 5px;
         text-align: center;
         border: 1px solid #ddd;
     }
@@ -1175,7 +1175,7 @@ section {
     }
 
     .mainFran strong {
-        font-size: 14px;
+        font-size: 3vw;
         font-weight: 400;
     }
 
@@ -1214,13 +1214,14 @@ section {
     }
 
     .footer dd {
-        font-size: 13px;
+        font-size: 2vw;
         font-weight: 300;
         line-height: 1.4;
     }
 
     .footer .last {
         display: flex;
+        width: 100%;
         flex-direction: column;
         line-height: 1.4;
     }
@@ -1230,7 +1231,7 @@ section {
     }
 
     .footer .last a {
-        font-size: 17px;
+        font-size: 3vw;
         font-weight: 400;
         line-height: 1.3;
         color: #f8f8f8;
@@ -1242,7 +1243,7 @@ section {
     }
 
     .footer .sns i {
-        font-size: 19px;
+        font-size: 4vw;
         padding: 0 2px;
     }
 }
