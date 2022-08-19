@@ -7,6 +7,10 @@ $(function () {
         pauseOnHover: false,
     });
 
+    $(".bar").on("click", function () {
+        $(".gnb").toggleClass("on");
+    });
+
     $(".menuSlide").slick({
         // autoplay: true,
         arrows: false,

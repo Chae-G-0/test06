@@ -655,15 +655,33 @@ section {
         height: 80px;
     }
 
-    .gnb {
-        display: none;
+    .header .gnb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 999;
+        height: 100vh;
+        width: calc(100% - 90px);
+        background: #fff;
+        transition: 0.5s;
+        padding: 30px 0;
+        border-right: 1px solid #ddd;
+    }
+
+    .header .gnb.on {
+        left: 0;
     }
 
     .gnb ul {
-        font-size: 19px;
-        display: flex;
+        font-size: 17px;
+        display: block;
         gap: 50px;
-        line-height: 120px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .gnb ul li {
+        border-bottom: 1px solid #ddd;
     }
 
     .log {
