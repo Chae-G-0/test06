@@ -545,8 +545,10 @@ section {
 }
 
 .footer .List {
+    justify-content: space-between;
+    width: 1200px;
     display: flex;
-    gap: 50px;
+    gap: 3 0px;
 }
 
 .footer h3 {
@@ -581,6 +583,9 @@ section {
 .footer .last .email {
     font-size: 13px;
     font-weight: 300;
+}
+
+.footer .sns {
 }
 
 .footer .sns i {
