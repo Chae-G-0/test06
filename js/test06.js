@@ -48,6 +48,7 @@ $(function () {
                 settings: {
                     autoplay: true,
                     arrows: false,
+                    dots: true,
                     slidesToShow: 1,
                 },
             },

@@ -41,6 +41,7 @@ section {
     font-size: 0;
     align-items: center;
     padding: 10px 0;
+    width: 200px;
 }
 
 .header h1 img {
@@ -54,15 +55,25 @@ section {
     line-height: 120px;
 }
 
+.log {
+    width: 200px;
+}
+
 .log ul {
     font-size: 15px;
     font-weight: 500;
     display: flex;
+    justify-content: end;
     gap: 20px;
     line-height: 120px;
 }
 
+.bar {
+    display: none;
+}
+
 .mainVisual {
+    position: relative;
     padding: 0;
 }
 
@@ -79,6 +90,33 @@ section {
 .mainVisual .bg03 {
     background: url(../img/bg05.jpg) no-repeat center center/cover;
     height: calc(100vh - 120px);
+}
+
+.mainVisual .scr {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    width: 30px;
+    height: 60px;
+}
+
+.mainVisual .scr::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 10px;
+    background: #fff;
+    animation: scr 1.5s infinite linear;
+}
+
+@keyframes scr {
+    to {
+        top: 15px;
+    }
 }
 
 .mainCopy {
@@ -369,7 +407,7 @@ section {
     color: #2e3d76;
     margin: 0 3px 0 0;
     transform: translateY(15px);
-    margin: 0 0 0 auto;
+    margin: 10px 0 0 0;
     text-align: end;
 }
 
@@ -588,7 +626,7 @@ section {
     }
 
     section {
-        padding: 70px 0;
+        padding: 50px 0;
     }
 
     .header {
@@ -596,16 +634,17 @@ section {
 
     .header .container {
         justify-content: space-between;
+        position: relative;
     }
 
     .header h1 {
         font-size: 0;
         align-items: center;
-        padding: 10px;
+        padding: 10px 20px;
     }
 
     .header h1 img {
-        height: 100px;
+        height: 80px;
     }
 
     .gnb {
@@ -631,23 +670,43 @@ section {
         line-height: 120px;
     }
 
+    .bar {
+        display: block;
+        position: fixed;
+        top: 40px;
+        right: 30px;
+        background: #f4f4f4;
+        border-radius: 3px;
+        z-index: 999;
+        cursor: pointer;
+    }
+
+    .bar i {
+        font-size: 20px;
+        padding: 5px;
+    }
+
     .mainVisual {
         padding: 0;
     }
 
     .mainVisual .bg01 {
         background: url(../img/bg08.jpg) no-repeat bottom 10% center / cover;
-        height: 600px;
+        height: 500px;
     }
 
     .mainVisual .bg02 {
         background: url(../img/bg10.jpg) no-repeat top 65% right 5% / cover;
-        height: 600px;
+        height: 500px;
     }
 
     .mainVisual .bg03 {
         background: url(../img/bg05.jpg) no-repeat center center/cover;
-        height: 600px;
+        height: 500px;
+    }
+
+    .mainVisual .scr {
+        display: none;
     }
 
     .mainCopy {
@@ -770,7 +829,7 @@ section {
     }
 
     .mainMenu {
-        padding: 0 0 50px 0;
+        padding: 50px 0;
     }
 
     .mainMenu .container {
@@ -881,6 +940,7 @@ section {
     }
 
     .mainTxt {
+        display: none;
         position: relative;
         overflow: hidden;
         padding: 40px 0;
@@ -932,7 +992,7 @@ section {
     }
 
     .mainInterior {
-        padding: 70px 0;
+        padding: 50px 0;
         text-align: center;
     }
 
@@ -999,7 +1059,28 @@ section {
     .inSlide figure {
         border-radius: 15px;
         height: 300px;
-        margin: 0 15px;
+        margin: 0 15px 10px 15px;
+    }
+
+    .inSlide .slick-dots button {
+        display: none;
+    }
+
+    .inSlide .slick-dots {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .inSlide .slick-dots li {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #2e3d76;
+    }
+
+    .inSlide .slick-dots li.slick-active {
+        background: #2e3d76;
     }
 
     .mainInterior .inBox {
