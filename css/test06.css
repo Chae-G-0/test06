@@ -814,7 +814,7 @@ section {
         height: 600px;
         border-radius: 45%;
         animation: wave 5s infinite;
-        z-index: 999;
+        z-index: 998;
     }
 
     @keyframes wave {
