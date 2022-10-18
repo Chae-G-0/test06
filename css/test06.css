@@ -3,7 +3,6 @@
 /* font-family: 'Cormorant Garamond', serif; */
 * {
     font-family: "Spoqa Han Sans Neo", "sans-serif";
-    /* border: 1px solid #f00; */
 }
 
 /* #2c99cd, #2e3d76 */
@@ -30,8 +29,7 @@ section {
     padding: 100px 0;
 }
 
-.header {
-}
+/* header */
 
 .header .container {
     justify-content: space-between;
@@ -71,6 +69,10 @@ section {
 .bar {
     display: none;
 }
+
+/* header */
+
+/* mainVisual */
 
 .mainVisual {
     position: relative;
@@ -118,6 +120,10 @@ section {
         top: 15px;
     }
 }
+
+/* mainVisual */
+
+/* mainCopy */
 
 .mainCopy {
     position: relative;
@@ -230,6 +236,10 @@ section {
     font-weight: 400;
 }
 
+/* mainCopy */
+
+/* mainMenu */
+
 .mainMenu {
     padding: 50px 0 100px 0;
 }
@@ -268,6 +278,10 @@ section {
     background: #2e3d76;
     color: #fff;
 }
+
+/* mainMenu */
+
+/* tabCoffee */
 
 .tabCoffee {
     flex: 5;
@@ -324,8 +338,9 @@ section {
     background: #2e3d76;
 }
 
-.mainTxt {
-}
+/* tabCoffee */
+
+/* mainTxt */
 
 .mainTxt {
     position: relative;
@@ -334,7 +349,6 @@ section {
 
 .mainTxt::before {
     font-family: "Cormorant Garamond", serif;
-
     content: "Blu Shaak Blu Shaak Blu Shaak Blu Shaak Blu Shaak";
     position: absolute;
     top: 0;
@@ -357,7 +371,6 @@ section {
     font-size: 100px;
     font-weight: 900;
     color: #2e3c761a;
-
     white-space: nowrap;
     animation: move2 20s infinite linear;
     padding: 50px 0 0 0;
@@ -380,8 +393,9 @@ section {
     }
 }
 
-.mainInterior {
-}
+/* mainTxt */
+
+/* mainInterior */
 
 .mainInterior h2 {
     line-height: 1;
@@ -477,6 +491,10 @@ section {
     width: 120%;
 }
 
+/* mainInterior */
+
+/* mainFran */
+
 .mainFran {
     padding: 50px 0 100px 0;
 }
@@ -499,7 +517,6 @@ section {
     font-weight: 500;
     line-height: 1.2;
     margin: auto 0 0 0;
-    /* margin: 0 0 20px 0; */
 }
 
 .mainFran table {
@@ -532,8 +549,9 @@ section {
     line-height: 1.4;
 }
 
-.footer {
-}
+/* mainFran */
+
+/* footer */
 
 .footer {
     padding: 50px 0;
@@ -586,19 +604,19 @@ section {
     font-weight: 300;
 }
 
-.footer .sns {
-}
-
 .footer .sns i {
     font-size: 19px;
     padding: 0 2px;
 }
 
+/* mainFran */
+
+
 /* 
 
 
 
-                반응형ㅇㅅㅇ
+                반응형
 
 
 
@@ -611,7 +629,6 @@ section {
     /* font-family: 'Cormorant Garamond', serif; */
     * {
         font-family: "Spoqa Han Sans Neo", "sans-serif";
-        /* outline: 1px solid #f00; */
     }
 
     /* #2c99cd, #2e3d76 */
@@ -636,9 +653,6 @@ section {
 
     section {
         padding: 50px 0;
-    }
-
-    .header {
     }
 
     .header .container {
@@ -854,9 +868,6 @@ section {
     }
 
     .mainMenu {
-    }
-
-    .mainMenu {
         padding: 50px 0;
     }
 
@@ -962,9 +973,6 @@ section {
     .arrow i:hover {
         color: #fff;
         background: #2e3d76;
-    }
-
-    .mainTxt {
     }
 
     .mainTxt {
@@ -1144,9 +1152,6 @@ section {
     }
 
     .mainFran {
-    }
-
-    .mainFran {
         padding: 50px 20px 100px 20px;
     }
 
@@ -1169,7 +1174,6 @@ section {
         font-weight: 500;
         line-height: 1.2;
         margin: 0 0 20px 0;
-        /* margin: 0 0 20px 0; */
     }
 
     .mainFran table {
@@ -1197,9 +1201,6 @@ section {
     .mainFran strong {
         font-size: 3vw;
         font-weight: 400;
-    }
-
-    .footer {
     }
 
     .footer {
