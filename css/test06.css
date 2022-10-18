@@ -464,6 +464,7 @@ section {
 .mainInterior .left p:nth-child(3) {
     font-size: 15px;
     line-height: 1.2;
+    word-break: keep-all;
 }
 
 .mainInterior .right {
